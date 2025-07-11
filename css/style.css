@@ -1,0 +1,223 @@
+
+:root {
+    --roxo: #8e44ad;
+    --fundo: #1e1e2f;
+    --texto: #f5f5f5;
+    --cinza: #888;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: var(--roxo);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--texto);
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--cinza);
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .section {
+    background-color: #2c2c3e;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .habilidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .habilidades-lista li {
+    background: var(--roxo);
+    color: #fff;
+    border-radius: 16px;
+    padding: 1rem;
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .habilidades-lista li:hover {
+    transform: scale(1.05);
+  }
+  
+  .icone-habilidade {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    opacity: 0.95;
+  }
+  
+  .emoji-habilidade {
+    font-size: 1.5rem;
+  }
+  
+  #projetos-container div {
+    background: #3b3b50;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  #projetos-container h3 {
+    color: var(--roxo);
+    margin-bottom: 0.5rem;
+  }
+  
+  #projetos-container a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 0.9rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    padding: 0.75rem;
+    background-color: var(--roxo);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #6c3483;
+  }
+  
+  #msg-status {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--cinza);
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    background: #111;
+    font-size: 0.9rem;
+    color: var(--texto);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links a,
+  .footer-links span {
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    color: var(--roxo);
+  }
+  
+  .footer-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--texto);
+  }
+  
+  .footer-contato p {
+    margin: 0;
+    color: var(--texto);
+  }
+  
+  .footer-contato a {
+    color: var(--texto);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-contato a:hover {
+    color: var(--roxo);
+  }
+  
+  .copy {
+    font-size: 0.75rem;
+    color: #555; 
+    margin-top: 0.75rem;
+  }
+  
+  @media (min-width: 768px) {
+    main {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
